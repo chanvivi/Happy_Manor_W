@@ -1,0 +1,52 @@
+        html{ font-size: 12px; }
+        body, div, p, a, h1,h2,h3,h4,h5,h6,span{ font-family: Microsoft JhengHei; }
+        button:focus{ outline: none; }
+		#ph_nav_btn{ display: none; }
+
+
+		@media (max-width: 768px){
+          #ph_nav_btn{ display: block; padding: 5px 5px 0px 5px; width: 100%; margin-bottom: 10px;}
+          .navbar{ padding: 0px; z-index: 10; position: fixed; background: #fff; width: 94%;}
+
+          /*手機漢堡*/
+          .hamburger-box{ width: 18px; height: 12px; }
+         .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{ width: 18px; height: 2px; }
+         .hamburger--slider .hamburger-inner::before{ top: 5px; }
+         .hamburger--slider .hamburger-inner::after{ top:10px; }
+         .hamburger--slider.is-active .hamburger-inner{ transform: translate3d(0, 5px, 0) rotate(45deg); }
+         .hamburger--slider.is-active .hamburger-inner::after{ transform: translate3d(0, -10px, 0) rotate(-90deg); }
+
+         /*手機MENU*/
+         .collapse{ position: absolute; width: 100%; top: 34px; left: 0px; background: #ccc; }
+         .navbar-nav{ padding: 0px 15px; }
+         .ph_tool_div{  }
+         .ch_tool_btn{ width: 100%; }
+         .ch_tool_btn a{ padding: 8px 0px; width: 46.5vw; display: inline-block; text-align: center; color: #3c3c3c; letter-spacing: 0.1rem; position: relative; text-decoration: none;}
+         .ch_tool_btn a span{ width: 100%; height: 0%; display: inline-block; position: absolute; bottom: 0; left: 0; background: #ffc105; z-index: -1; }
+         /*.ch_tool_btn a::after { content: ""; position: absolute; width: 0%; height:100%; background: #FFC107; bottom: 0; left: 0; right: 0; margin: auto; transition: width 0.5s; z-index: -1;}
+         .ch_tool_btn a:focus::after{ width: 100%; }*/
+         .txt_big_btn{  }
+         .txt_big_btn a{ display: inline-block; font-size: 19px; color: #3c3c3c; }
+
+         /*bottom 工具欄*/
+         .bottom_tool{ position: fixed; bottom: 0; right: 0; z-index: 10; background: #fff; width: 50px; height: 100%; padding: 7px 0px 3px 0px; display: inline-block;}
+         .bottom_tool a{ text-align: center;  color: #000; display: inline-block; width: 100%; margin-bottom: 10px;}
+         .bottom_tool a span{ display: inline-block; width: 25px; height: 24px; background-color: #fff; border-radius: 4px; background-repeat: no-repeat; background-position: center;}
+         .more_tool_btn { position: absolute; right: 5vw; bottom: 8vh; display: none;}
+
+
+         /*內容*/
+         .container-fluid{ padding: 0px; padding: 34px 0px 0px 0px; width: 94%; margin:0;}
+         .row div img{ width: 100%; }
+         .con_txt{ padding: 20px !important; text-align: center; }
+         .con_txt h1{ font-size: 2.2rem; letter-spacing: 1.5px; line-height: 1.5em; margin-bottom: 15px; font-weight: 600; }
+         .con_txt h2{ font-size: 1.4rem; margin-bottom: 15px; letter-spacing: 1.5px; line-height: 1.5; font-weight: 600; }
+         .con_txt p{ font-size: 1.2rem; line-height: 1.8em; text-align: justify; }
+		}
+
+        @media (max-width: 420px) {
+            .navbar{ width: 91%; }
+            .ch_tool_btn a{ width: 44vw; }
+            .bottom_tool{ width: 35px; }
+            .container-fluid{ width: 91%; }
+        }
