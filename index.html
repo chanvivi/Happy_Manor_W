@@ -47,6 +47,10 @@
   <link rel="stylesheet" type="text/css" href="assets/css/horizontal.css?3">
 
   <style type="text/css">
+    .justify-content-end {
+      justify-content: center !important;
+    }
+
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap");
 
@@ -161,7 +165,10 @@
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6705882353);
       }
     }
-
+    .navbar{
+      justify-content: center;
+      padding: 10px 10px !important;
+    }
     .navbar-expand-lg .navbar-nav .nav-link:hover:after {
       width: 0%;
     }
@@ -178,7 +185,7 @@
     }
 
     @media (min-width: 992px) {
-      .navbar-expand-lg .navbar-nav{
+      .navbar-expand-lg .navbar-nav {
         background-color: black;
         line-height: calc((2vw / 70)*100);
         border-radius: calc((50vw / 238)*100);
@@ -199,7 +206,7 @@
       flex-direction: row;
       background: black;
       line-height: calc((6vw / 65)*100);
-      border-radius: calc((50vw / 175)*100);      
+      border-radius: calc((50vw / 175)*100);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -3222,9 +3229,7 @@
                      <a class="nav-item nav-link ui-link" href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/fb_icon.svg"></a>`;
         $('.navbar-expand-lg .navbar-nav').html(navbar_html);
       } else {
-        let navbar_html = `<div class="logo_div">
-                <img src="img/case2022072609323032101302.svg" alt="logo">
-                </div>
+        let navbar_html = `
                 <div class="tool_div flex_box">
                 <div><a class="msg_btn" href="javascript:;" >立即預約</a></div>
                 <div><a href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/fb_icon.svg"></a></div>
