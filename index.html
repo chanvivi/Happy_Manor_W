@@ -50,6 +50,13 @@
     /* .justify-content-end {
       justify-content: center !important;
     } */
+    .face a{
+      display: flex;
+      justify-content: center;
+    }
+    .face img{
+      width: 40%;
+    }
 
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap");
@@ -2663,7 +2670,7 @@
 
   </div>
 
-
+ace
 
   <!-- 更多 -->
   <div class="more_tool_div">
@@ -3235,7 +3242,7 @@
         let navbar_html = `
                 <div class="tool_div flex_box">
                 <div><a class="msg_btn" href="javascript:;" >立即預約</a></div>
-                <div><a href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/svg/new_fb.png"></a></div>
+                <div class="face"><a href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/svg/new_fb.png"></a></div>
                 </div>`;
         $('#top_navbar').html(navbar_html);
       }
