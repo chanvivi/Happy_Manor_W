@@ -201,9 +201,6 @@
 
     #top_navbar .tool_div {
       flex-direction: row;
-      background: black;
-      line-height: calc((6vw / 65)*100);
-      border-radius: calc((50vw / 175)*100);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -212,6 +209,9 @@
 
     #top_navbar .tool_div div:nth-child(1) {
       /* background-color: #B08D46; */
+      background-color: #000;
+      line-height: calc((6vw / 65)*100);
+      border-radius: calc((50vw / 175)*100);
       padding: 9px 12px;
       margin-right: 10px;
       line-height: 1;
@@ -224,6 +224,9 @@
     }
 
     #top_navbar .tool_div div:nth-child(2) {
+      background-color: #000;
+      line-height: calc((6vw / 65)*100);
+      border-radius: calc((50vw / 175)*100);
       /* width: 85px; */
       width: 14vw;
       margin-right: 3vw;
@@ -3231,7 +3234,7 @@
         let navbar_html = `
                 <div class="tool_div flex_box">
                 <div><a class="msg_btn" href="javascript:;" >立即預約</a></div>
-                <div><a href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/fb_icon.svg"></a></div>
+                <div><a href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/svg/new_fb.png"></a></div>
                 </div>`;
         $('#top_navbar').html(navbar_html);
       }
