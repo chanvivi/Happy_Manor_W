@@ -47,9 +47,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/horizontal.css?3">
 
   <style type="text/css">
-    .justify-content-end {
+    /* .justify-content-end {
       justify-content: center !important;
-    }
+    } */
 
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap");
@@ -174,7 +174,7 @@
     }
 
     .navbar-expand-lg .navbar-nav a:nth-child(1) {
-      /* background-color: #B08D46; */
+      background-color: #B08D46;
       padding: 13px 15px;
       line-height: 1;
     }
@@ -186,9 +186,6 @@
 
     @media (min-width: 992px) {
       .navbar-expand-lg .navbar-nav {
-        background-color: black;
-        line-height: calc((2vw / 70)*100);
-        border-radius: calc((50vw / 238)*100);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -558,9 +555,9 @@
       }
     }
 
-    /* #logo_img {
+    #logo_img {
       height: 40px;
-    } */
+    }
 
     .title {
       position: relative;
@@ -1459,7 +1456,9 @@
     .s12 .title h2 {
       color: #005743;
     }
-
+    .s12_1 .title h2 {
+      color: #005743;
+    }
     .s12 .title .line::before {
       background-color: rgba(0, 87, 67, 0.5019607843);
     }
@@ -1645,8 +1644,8 @@
 
     @media (min-width: 769px) {
       #top_navbar {
-        /* background-color: #005743; */
-        background-color: transparent;
+        background-color: #005743;
+        /* background-color: transparent; */
       }
     }
 
@@ -2595,7 +2594,7 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
-        <!-- <img id=logo_img src="img/case2022072609323032101302.svg"> -->
+        <img id=logo_img src="img/case2022072609323032101302.svg">
 
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="javascript:;" anchor="an2022072610152519">首頁</a> </div>
@@ -3226,7 +3225,7 @@
       if ($(window).width() > 768) {
         let navbar_html =
           `<a class="msg_btn nav-item nav-link ui-link" href="javascript:;" >立即預約</a>
-                     <a class="nav-item nav-link ui-link" href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/fb_icon.svg"></a>`;
+          <a class="nav-item nav-link ui-link" href="https://www.facebook.com/profile.php?id=100083310423930" target="_blank" ><img src="img/fb_icon.svg"></a>`;
         $('.navbar-expand-lg .navbar-nav').html(navbar_html);
       } else {
         let navbar_html = `
